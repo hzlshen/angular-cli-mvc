@@ -1,3 +1,13 @@
-<p>
-  product works!
-</p>
+<div *ngFor="let product of products" class="col-md-4 col-sm-4">
+  <div class="thumbnail">
+    <img src="http://placehold.it/320x150" alt="">
+    <div class="caption">
+      <h4 class="pull-right">{{product.price}}元</h4>
+      <h4><a href="">{{product.title}}</a> </h4>
+      <p>{{product.desc}}</p>
+    </div>
+    <div>
+      <app-stars></app-stars>
+    </div>
+  </div>
+</div>
