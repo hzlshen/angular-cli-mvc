@@ -8,6 +8,7 @@ import {FormsModule} from "@angular/forms";
   declarations: [
     AppComponent
   ],
+  //第一次报错原因： 没导入FormsModule 需手动导入
   imports: [
     BrowserModule,
     FormsModule
