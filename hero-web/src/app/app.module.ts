@@ -1,21 +1,42 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {HeroesComponent} from './heroes.component';
 import {FormsModule} from "@angular/forms";
 import {HeroDetailComponent} from "./hero-detail.component";
+import {HeroService} from "./hero.service";
+import {RouterModule} from "@angular/router";
+import {DashboardComponent} from "./dashboard.component";
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeroDetailComponent
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot([
+      {
+        path:'heroes',
+        component:'HeroesComponent'
+      },
+      {
+        path:'dashboard',
+        component:'DashboardComponent'
+      }
+    ])
   ],
   //第一次报错原因： 没导入FormsModule 需手动导入
   imports: [
-    BrowserModule,
-    FormsModule
+    AppComponent,
+    HeroDetailComponent,
+    HeroesComponent,
+    DashboardComponent
   ],
-  providers: [],
+  providers: [
+    HeroService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
