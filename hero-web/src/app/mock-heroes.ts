@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2017/10/10.
- */
 import { Hero } from './hero';
 
 export const HEROES: Hero[] = [
