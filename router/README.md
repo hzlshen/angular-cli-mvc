@@ -6,6 +6,8 @@ npm install -g @angular/cli
 
 ng new router --rating
 
+cd router
+
 npm install
 
 ng g component home
