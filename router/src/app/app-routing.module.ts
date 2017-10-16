@@ -5,8 +5,9 @@ import { ProductComponent } from "./product/product.component";
 import { Code404Component } from "./code404/code404.component";
 
 const routes: Routes = [
-  {path:'', component:HomeComponent},
-  {path:'product', component:ProductComponent},
+  {path:'', redirectTo:'/home',pathMatch:'full'},
+  {path:'home', component:HomeComponent},
+  {path:'product/:id', component:ProductComponent},
   {path:'**', component:Code404Component}
 ];
 
