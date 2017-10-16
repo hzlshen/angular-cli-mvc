@@ -29,5 +29,20 @@ export class HeroDetailComponent implements OnInit {
 goBack():void{
   this.location.back();
 }
+save():void{
+  this.heroService.update(this.hero)
+    .then(()=>this.goBack());
+}
+
+  private headers = new Headers({'Content-Type': 'application/json'});
+  update(hero: Hero): Promise<Hero> {
+    const url = `${this.heroesUrl}/${hero.id}`;
+    return this.http
+      .put(url, JSON.stringify(hero), {headers: this.headers})
+      .toPromise()
+      .then(() => hero)
+      .catch(this.handleError);
+  }
+
 
 }
