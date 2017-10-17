@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2017/10/11.
- */
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
