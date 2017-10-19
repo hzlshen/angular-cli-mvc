@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-seller-info',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SellerInfoComponent implements OnInit {
 
-  constructor() { }
+  private sellerId :number;
+
+  constructor(private routeInfo:ActivatedRoute) { }
 
   ngOnInit() {
+    this.sellerId =this.routeInfo.snapshot.params["id"];
   }
 
 }
