@@ -2,4 +2,7 @@
 <!--路由中传参-->
 <a [routerLink]="['/product',1]">商品详情</a>
 <input type="button" value="商品详情" (click)="toProductDetailes()"/>
+<a [routerLink]="[{outlets:{primary:'home', aux:'chat'}}]">开始聊天</a>
+<a [routerLink]="[{outlets:{aux:null}}]">结束聊天</a>
 <router-outlet></router-outlet>
+<router-outlet name="aux"></router-outlet>

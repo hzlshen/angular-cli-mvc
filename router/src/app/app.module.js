@@ -14,6 +14,7 @@ var product_component_1 = require('./product/product.component');
 var code404_component_1 = require('./code404/code404.component');
 var product_desc_component_1 = require('./product-desc/product-desc.component');
 var seller_info_component_1 = require('./seller-info/seller-info.component');
+var chat_component_1 = require('./chat/chat.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -25,7 +26,8 @@ var AppModule = (function () {
                 product_component_1.ProductComponent,
                 code404_component_1.Code404Component,
                 product_desc_component_1.ProductDescComponent,
-                seller_info_component_1.SellerInfoComponent
+                seller_info_component_1.SellerInfoComponent,
+                chat_component_1.ChatComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,

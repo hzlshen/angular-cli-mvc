@@ -12,9 +12,11 @@ var product_component_1 = require("./product/product.component");
 var code404_component_1 = require("./code404/code404.component");
 var product_desc_component_1 = require("./product-desc/product-desc.component");
 var seller_info_component_1 = require("./seller-info/seller-info.component");
+var chat_component_1 = require("./chat/chat.component");
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: home_component_1.HomeComponent },
+    { path: 'chat', component: chat_component_1.ChatComponent, outlet: 'aux' },
     { path: 'product/:id', component: product_component_1.ProductComponent, children: [
             { path: '', component: product_desc_component_1.ProductDescComponent },
             { path: 'seller/:id', component: seller_info_component_1.SellerInfoComponent }
