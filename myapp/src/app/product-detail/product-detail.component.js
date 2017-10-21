@@ -11,7 +11,7 @@ var ProductDetailComponent = (function () {
         this.routeInfo = routeInfo;
     }
     ProductDetailComponent.prototype.ngOnInit = function () {
-        this.productTitile = this.routeInfo.snapshot.params["prodTitile"];
+        this.productTitile = this.routeInfo.snapshot.params["prodTitle"];
     };
     ProductDetailComponent = __decorate([
         core_1.Component({

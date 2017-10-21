@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-product-detail',
@@ -9,10 +10,10 @@ export class ProductDetailComponent implements OnInit {
 
   productTitile:string;
 
-  constructor(private routeInfo : ActivateRoute) { }
+  constructor(private routeInfo : ActivatedRoute) { }
 
   ngOnInit() {
-    this.productTitile = this.routeInfo.snapshot.params["prodTitile"];
+    this.productTitile = this.routeInfo.snapshot.params["prodTitle"];
   }
 
 }

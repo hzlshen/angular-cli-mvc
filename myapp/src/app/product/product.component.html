@@ -3,7 +3,7 @@
     <img src="http://placehold.it/320x150" alt="">
     <div class="caption">
       <h4 class="pull-right">{{product.price}}元</h4>
-      <h4><a href="">{{product.title}}</a> </h4>
+      <h4><a [routerLink]="['/product',product.title]">{{product.title}}</a> </h4>
       <p>{{product.desc}}</p>
     </div>
     <div>
