@@ -15,6 +15,7 @@ var carousel_component_1 = require('./carousel/carousel.component');
 var product_component_1 = require('./product/product.component');
 var stars_component_1 = require('./stars/stars.component');
 var product_detail_component_1 = require('./product-detail/product-detail.component');
+var home_component_1 = require('./home/home.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +29,8 @@ var AppModule = (function () {
                 carousel_component_1.CarouselComponent,
                 product_component_1.ProductComponent,
                 stars_component_1.StarsComponent,
-                product_detail_component_1.ProductDetailComponent
+                product_detail_component_1.ProductDetailComponent,
+                home_component_1.HomeComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule
