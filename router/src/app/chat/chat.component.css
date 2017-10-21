@@ -1,6 +1,6 @@
 .chat{
-  background-color: green;
-  height:100px;
+  background: green;
+  height: 100px;
   width: 30%;
   float: left;
   box-sizing: border-box;

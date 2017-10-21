@@ -1,6 +1,6 @@
 .product{
-  background-color: yellow;
-  height:100px;
+  background: yellow;
+  height: 100px;
   width: 70%;
   float: left;
   box-sizing: border-box;
