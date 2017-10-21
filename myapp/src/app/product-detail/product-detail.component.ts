@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailComponent implements OnInit {
 
-  constructor() { }
+  productTitile:string;
+
+  constructor(private routeInfo : ActivateRoute) { }
 
   ngOnInit() {
+    this.productTitile = this.routeInfo.snapshot.params["prodTitile"];
   }
 
 }
