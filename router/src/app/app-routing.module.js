@@ -13,6 +13,8 @@ var code404_component_1 = require("./code404/code404.component");
 var product_desc_component_1 = require("./product-desc/product-desc.component");
 var seller_info_component_1 = require("./seller-info/seller-info.component");
 var chat_component_1 = require("./chat/chat.component");
+var login_guuard_1 = require("./guard/login.guuard");
+var unsaved_guard_1 = require("./guard/unsaved-guard");
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'chat', component: chat_component_1.ChatComponent, outlet: 'aux' },
@@ -20,6 +22,10 @@ var routes = [
     { path: 'product/:id', component: product_component_1.ProductComponent, children: [
             { path: '', component: product_desc_component_1.ProductDescComponent },
             { path: 'seller/:id', component: seller_info_component_1.SellerInfoComponent }
+        ], canActivate: [
+            login_guuard_1.LoginGuard
+        ], canDeactivate: [
+            unsaved_guard_1.UnsavedGuard
         ] },
     { path: '**', component: code404_component_1.Code404Component }
 ];
@@ -30,7 +36,7 @@ var AppRoutingModule = (function () {
         core_1.NgModule({
             imports: [router_1.RouterModule.forRoot(routes)],
             exports: [router_1.RouterModule],
-            providers: []
+            providers: [login_guuard_1.LoginGuard, unsaved_guard_1.UnsavedGuard]
         })
     ], AppRoutingModule);
     return AppRoutingModule;
