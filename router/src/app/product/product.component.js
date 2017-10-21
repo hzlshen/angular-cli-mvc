@@ -14,6 +14,10 @@ var ProductComponent = (function () {
         var _this = this;
         //参数订阅
         this.routeInfo.params.subscribe(function (params) { return _this.productId = params["id"]; });
+        this.routeInfo.data.subscribe(function (data) {
+            _this.productId = data.product.id;
+            _this.productName = data.product.name;
+        });
         //参数快照
         //this.productId = this.routeInfo.snapshot.params["id"];
     };
@@ -27,4 +31,12 @@ var ProductComponent = (function () {
     return ProductComponent;
 }());
 exports.ProductComponent = ProductComponent;
+var Product = (function () {
+    function Product(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    return Product;
+}());
+exports.Product = Product;
 //# sourceMappingURL=product.component.js.map
