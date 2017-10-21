@@ -10,6 +10,15 @@ import { ProductComponent } from './product/product.component';
 import { StarsComponent } from './stars/stars.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HomeComponent } from './home/home.component';
+import { Routes,RouterModule } from '@angular/router';
+
+//路由配置
+const routeConfig:Routes =[
+  {path:'',component:HomeComponent},
+  {path:'product/:prodTitle',component:ProductDetailComponent}
+]
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +33,8 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routeConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

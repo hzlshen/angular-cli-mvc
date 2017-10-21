@@ -16,6 +16,12 @@ var product_component_1 = require('./product/product.component');
 var stars_component_1 = require('./stars/stars.component');
 var product_detail_component_1 = require('./product-detail/product-detail.component');
 var home_component_1 = require('./home/home.component');
+var router_1 = require('@angular/router');
+//路由配置
+var routeConfig = [
+    { path: '', component: home_component_1.HomeComponent },
+    { path: 'product/:prodTitle', component: product_detail_component_1.ProductDetailComponent }
+];
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,7 +39,8 @@ var AppModule = (function () {
                 home_component_1.HomeComponent
             ],
             imports: [
-                platform_browser_1.BrowserModule
+                platform_browser_1.BrowserModule,
+                router_1.RouterModule.forRoot(routeConfig)
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
