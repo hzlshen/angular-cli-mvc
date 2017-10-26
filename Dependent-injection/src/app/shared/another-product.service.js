@@ -6,9 +6,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
+var product_service_1 = require("./product.service");
 var AnotherProductService = (function () {
     function AnotherProductService() {
     }
+    AnotherProductService.prototype.getProduct = function () {
+        return new product_service_1.Product(1, "sanxing", 4899, "最新款三星手机");
+    };
     AnotherProductService = __decorate([
         core_1.Injectable()
     ], AnotherProductService);
