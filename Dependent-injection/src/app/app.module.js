@@ -10,6 +10,7 @@ var core_1 = require('@angular/core');
 var app_component_1 = require('./app.component');
 var product1_component_1 = require('./product1/product1.component');
 var product_service_1 = require("./shared/product.service");
+var product2_component_1 = require('./product2/product2.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,7 +18,8 @@ var AppModule = (function () {
         core_1.NgModule({
             declarations: [
                 app_component_1.AppComponent,
-                product1_component_1.Product1Component
+                product1_component_1.Product1Component,
+                product2_component_1.Product2Component
             ],
             imports: [
                 platform_browser_1.BrowserModule
