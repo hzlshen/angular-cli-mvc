@@ -7,9 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var ProductService = (function () {
-    function ProductService() {
+    function ProductService(logger) {
+        this.logger = logger;
     }
     ProductService.prototype.getProduct = function () {
+        this.logger.log("getProduct方法被调用");
         return new Product(0, "iPhone7", 5899, "最新款苹果手机");
     };
     ProductService = __decorate([
