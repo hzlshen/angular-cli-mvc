@@ -7,9 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var Product1Component = (function () {
-    function Product1Component() {
+    function Product1Component(productService) {
+        this.productService = productService;
     }
     Product1Component.prototype.ngOnInit = function () {
+        this.product = this.productService.getProduct();
     };
     Product1Component = __decorate([
         core_1.Component({
