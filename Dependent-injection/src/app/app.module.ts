@@ -16,7 +16,18 @@ import {LoggerService} from "./shared/logger.service";
   imports: [
     BrowserModule
   ],
-  providers: [ProductService,LoggerService],
+  providers: [{
+    provider:ProductService,
+    useFactory:()=>{
+      let logger = new LoggerService();
+      let dev = Math.random()>0.5;
+      if (dev){
+        return new ProductService(logger);
+      }else{
+        return new AntherProductService(logger);
+      }
+    }
+  },LoggerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

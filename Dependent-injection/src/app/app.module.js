@@ -25,7 +25,19 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule
             ],
-            providers: [product_service_1.ProductService, logger_service_1.LoggerService],
+            providers: [{
+                    provider: product_service_1.ProductService,
+                    useFactory: function () {
+                        var logger = new logger_service_1.LoggerService();
+                        var dev = Math.random() > 0.5;
+                        if (dev) {
+                            return new product_service_1.ProductService(logger);
+                        }
+                        else {
+                            return new AntherProductService(logger);
+                        }
+                    }
+                }, logger_service_1.LoggerService],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
