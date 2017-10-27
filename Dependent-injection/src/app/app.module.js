@@ -12,6 +12,7 @@ var product1_component_1 = require('./product1/product1.component');
 var product_service_1 = require("./shared/product.service");
 var product2_component_1 = require('./product2/product2.component');
 var logger_service_1 = require("./shared/logger.service");
+var another_product_service_1 = require("./shared/another-product.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -34,7 +35,7 @@ var AppModule = (function () {
                             return new product_service_1.ProductService(logger);
                         }
                         else {
-                            return new AntherProductService(logger);
+                            return new another_product_service_1.AnotherProductService(logger);
                         }
                     }
                 }, logger_service_1.LoggerService],
