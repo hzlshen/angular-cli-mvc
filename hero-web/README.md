@@ -10,4 +10,3 @@ npm install
 
 ng serve
 
-![Image text](https://github.com/hzlshen/Imgage_box/blob/master/display-data.png)
