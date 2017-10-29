@@ -33,7 +33,6 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 http_1.HttpModule
             ],
-<<<<<<< HEAD
             providers: [{
                     provide: product_service_1.ProductService,
                     useFactory: function (logger, appConfig) {
@@ -50,9 +49,7 @@ var AppModule = (function () {
                     provide: "APP_CONFIG", useValue: { isDev: false }
                 }
             ],
-=======
             providers: [product_service_1.ProductService, logger_service_1.LoggerService],
->>>>>>> parent of 7d5be83... 工厂模式实现
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
