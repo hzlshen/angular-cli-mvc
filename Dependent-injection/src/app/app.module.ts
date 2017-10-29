@@ -20,7 +20,6 @@ import {AnotherProductService} from "./shared/another-product.service";
     FormsModule,
     HttpModule
   ],
-<<<<<<< HEAD
 
   providers: [{
     provide: ProductService,
@@ -37,8 +36,6 @@ import {AnotherProductService} from "./shared/another-product.service";
       provide: "APP_CONFIG", useValue: {isDev: false}
     }
   ],
-=======
->>>>>>> parent of 7d5be83... 工厂模式实现
   providers: [ProductService,LoggerService],
   bootstrap: [AppComponent]
 })
