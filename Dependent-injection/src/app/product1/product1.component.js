@@ -9,6 +9,7 @@ var core_1 = require('@angular/core');
 var Product1Component = (function () {
     function Product1Component(productService) {
         this.productService = productService;
+        this.name = "Tom";
     }
     Product1Component.prototype.ngOnInit = function () {
         this.product = this.productService.getProduct();

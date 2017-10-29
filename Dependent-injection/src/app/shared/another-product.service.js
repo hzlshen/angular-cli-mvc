@@ -12,7 +12,7 @@ var AnotherProductService = (function () {
         this.logger = logger;
     }
     AnotherProductService.prototype.getProduct = function () {
-        return new product_service_1.Product(1, "sanxing", 4899, "最新款三星手机");
+        return new product_service_1.Product(1, "sumsung7", 4899, "最新款三星手机");
     };
     AnotherProductService = __decorate([
         core_1.Injectable()

@@ -43,4 +43,3 @@ export class AppModule {
     console.log(event);
   }
 }
-

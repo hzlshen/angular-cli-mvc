@@ -12,4 +12,3 @@ export class AnotherProductService implements ProductService{
   constructor(public logger:LoggerService) { }
 
 }
-
