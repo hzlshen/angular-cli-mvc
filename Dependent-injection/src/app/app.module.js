@@ -32,8 +32,7 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 http_1.HttpModule
             ],
-            providers: [
-                product_service_1.ProductService, logger_service_1.LoggerService
+            providers: [product_service_1.ProductService, logger_service_1.LoggerService
             ],
             bootstrap: [app_component_1.AppComponent]
         })

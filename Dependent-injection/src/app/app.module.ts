@@ -19,8 +19,7 @@ import {LoggerService} from "./shared/logger.service";
     FormsModule,
     HttpModule
   ],
-  providers: [
-    ProductService, LoggerService
+  providers: [ProductService, LoggerService
   ],
   bootstrap: [AppComponent]
 })
