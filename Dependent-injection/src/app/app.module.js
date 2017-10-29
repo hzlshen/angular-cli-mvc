@@ -14,7 +14,6 @@ var product1_component_1 = require("./product1/product1.component");
 var product_service_1 = require("./shared/product.service");
 var product2_component_1 = require('./product2/product2.component');
 var logger_service_1 = require("./shared/logger.service");
-var another_product_service_1 = require("./shared/another-product.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,23 +32,9 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 http_1.HttpModule
             ],
-            providers: [{
-                    provide: product_service_1.ProductService,
-                    useFactory: function (logger, appConfig) {
-                        if (appConfig.isDev) {
-                            return new product_service_1.ProductService(logger);
-                        }
-                        else {
-                            return new another_product_service_1.AnotherProductService(logger);
-                        }
-                    },
-                    deps: [logger_service_1.LoggerService, "APP_CONFIG"]
-                }, logger_service_1.LoggerService,
-                {
-                    provide: "APP_CONFIG", useValue: { isDev: false }
-                }
+            providers: [
+                product_service_1.ProductService, logger_service_1.LoggerService
             ],
-            providers: [product_service_1.ProductService, logger_service_1.LoggerService],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
