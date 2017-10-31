@@ -7,11 +7,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var ProductDetailComponent = (function () {
-    function ProductDetailComponent(routeInfo) {
+    function ProductDetailComponent(routeInfo, productService) {
         this.routeInfo = routeInfo;
+        this.productService = productService;
     }
     ProductDetailComponent.prototype.ngOnInit = function () {
-        this.productTitile = this.routeInfo.snapshot.params["prodTitle"];
+        var productId = this.routeInfo.snapshot.params["pducutId"];
+        this.product = this.productService.getProduct(productId);
     };
     ProductDetailComponent = __decorate([
         core_1.Component({
