@@ -2,3 +2,10 @@
   bind works!
 </p>
 <button (click)="doOnClick($event)">点我</button>
+<br>
+<img [src]="imgUrl" alt="">
+<br>
+<img src="{{imgUrl}}" alt="">
+<br>
+
+<input type="text" value="Tom" (input)="doOnInput($event)">
