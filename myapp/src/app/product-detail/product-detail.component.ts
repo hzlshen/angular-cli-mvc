@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
-import {Product, ProductService} from "../shared/product.service";
+import {Product, ProductService,Comment} from "../shared/product.service";
 
 @Component({
   selector: 'app-product-detail',
@@ -11,6 +11,8 @@ export class ProductDetailComponent implements OnInit {
 
   product:Product;
 
+  comments:Comment[];
+
 
   constructor(private routeInfo : ActivatedRoute,
               private productService:ProductService
@@ -18,7 +20,8 @@ export class ProductDetailComponent implements OnInit {
 
   ngOnInit() {
     let productId:number = this.routeInfo.snapshot.params["productId"];
-    this.product = this.productService.getProduct(productId)
+    this.product = this.productService.getProduct(productId);
+    this.comments = this.productService.getCommentsForProductId(productId);
   }
 
 }

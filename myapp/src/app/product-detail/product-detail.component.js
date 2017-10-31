@@ -14,6 +14,7 @@ var ProductDetailComponent = (function () {
     ProductDetailComponent.prototype.ngOnInit = function () {
         var productId = this.routeInfo.snapshot.params["productId"];
         this.product = this.productService.getProduct(productId);
+        this.comments = this.productService.getCommentsForProductId(productId);
     };
     ProductDetailComponent = __decorate([
         core_1.Component({
