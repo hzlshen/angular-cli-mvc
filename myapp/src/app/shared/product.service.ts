@@ -31,7 +31,7 @@ export class ProductService {
   }
 
   getCommentsForProductId(id:number):Comment[]{
-    return this.comments.filter((comment:Comment)=>comment.productId);
+    return this.comments.filter((comment:Comment)=>comment.productId ==id);
   }
 
 

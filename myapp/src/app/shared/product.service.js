@@ -30,7 +30,7 @@ var ProductService = (function () {
         return this.products.find(function (product) { return product.id == id; });
     };
     ProductService.prototype.getCommentsForProductId = function (id) {
-        return this.comments.filter(function (comment) { return comment.productId; });
+        return this.comments.filter(function (comment) { return comment.productId == id; });
     };
     ProductService = __decorate([
         core_1.Injectable()

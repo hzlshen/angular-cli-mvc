@@ -12,7 +12,7 @@ var ProductDetailComponent = (function () {
         this.productService = productService;
     }
     ProductDetailComponent.prototype.ngOnInit = function () {
-        var productId = this.routeInfo.snapshot.params["pducutId"];
+        var productId = this.routeInfo.snapshot.params["productId"];
         this.product = this.productService.getProduct(productId);
     };
     ProductDetailComponent = __decorate([
