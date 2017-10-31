@@ -40,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.service.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="product.service.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/shared/product.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+            <state relative-caret-position="209">
+              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -104,7 +104,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product-detail.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product-detail.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/product-detail/product-detail.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="313">
@@ -127,9 +127,9 @@
         <option value="$PROJECT_DIR$/app/product/product.component.html" />
         <option value="$PROJECT_DIR$/app/app.module.ts" />
         <option value="$PROJECT_DIR$/app/product/product.component.ts" />
-        <option value="$PROJECT_DIR$/app/shared/product.service.ts" />
         <option value="$PROJECT_DIR$/app/product-detail/product-detail.component.ts" />
         <option value="$PROJECT_DIR$/app/product-detail/product-detail.component.html" />
+        <option value="$PROJECT_DIR$/app/shared/product.service.ts" />
       </list>
     </option>
   </component>
@@ -372,12 +372,12 @@
       <option name="presentableId" value="Default" />
       <updated>1507458103773</updated>
       <workItem from="1508581978224" duration="7287000" />
-      <workItem from="1509454874837" duration="5433000" />
+      <workItem from="1509454874837" duration="6324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12720000" />
+    <option name="totallyTimeSpent" value="13611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="425" y="52" width="1126" height="739" extended-state="0" />
@@ -556,14 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/shared/product.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -582,6 +574,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/product-detail/product-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/product-detail/product-detail.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -590,10 +590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/product-detail/product-detail.component.html">
+    <entry file="file://$PROJECT_DIR$/app/shared/product.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="209">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
           <folding />
         </state>
       </provider>
