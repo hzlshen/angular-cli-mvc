@@ -14,12 +14,24 @@ export class BindComponent implements OnInit {
 
   isBlog:boolean = false;
 
+  divClass:any = {
+    a:true,
+    b:false,
+    c:false
+  };
+
   size:number = 2;
 
   constructor() {
     setTimeout(()=>{
       this.isBlog = true;
-    },3000)
+      this.divClass ={
+        a:false,
+        b:true,
+        c:true
+      }
+    },3000);
+
   }
 
   ngOnInit() {

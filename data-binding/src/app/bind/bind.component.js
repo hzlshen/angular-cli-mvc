@@ -14,9 +14,19 @@ var BindComponent = (function () {
         //只要编写代码的时候同一风格就可以了
         this.imgUrl = "http://placehold.it/400x400";
         this.isBlog = false;
+        this.divClass = {
+            a: true,
+            b: false,
+            c: false
+        };
         this.size = 2;
         setTimeout(function () {
             _this.isBlog = true;
+            _this.divClass = {
+                a: false,
+                b: true,
+                c: true
+            };
         }, 3000);
     }
     BindComponent.prototype.ngOnInit = function () {
