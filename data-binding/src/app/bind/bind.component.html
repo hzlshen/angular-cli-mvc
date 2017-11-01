@@ -21,5 +21,18 @@
 <!--模板的绑定是通过dom属性和时间来工作的 而不是html属性-->
 <!--差值表达式是dom属性绑定-->
 
-
 <button disabled>点我</button>
+
+
+
+<!--html属性绑定-->
+<table>
+  <tr>
+    <td [attr.colspan]="size">Hello World</td>
+  </tr>
+</table>
+
+<!--样式全有或者全无-->
+<div class="a b" [class.c]="isBlog">
+  慕课网
+</div>

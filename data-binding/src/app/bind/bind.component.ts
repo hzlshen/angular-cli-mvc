@@ -12,7 +12,15 @@ export class BindComponent implements OnInit {
   //只要编写代码的时候同一风格就可以了
   imgUrl:string = "http://placehold.it/400x400"
 
-  constructor() { }
+  isBlog:boolean = false;
+
+  size:number = 2;
+
+  constructor() {
+    setTimeout(()=>{
+      this.isBlog = true;
+    },3000)
+  }
 
   ngOnInit() {
   }

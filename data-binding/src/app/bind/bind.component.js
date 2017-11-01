@@ -8,10 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require('@angular/core');
 var BindComponent = (function () {
     function BindComponent() {
+        var _this = this;
         //属性绑定
         //差值表达式和属性绑定 是一回事
         //只要编写代码的时候同一风格就可以了
         this.imgUrl = "http://placehold.it/400x400";
+        this.isBlog = false;
+        this.size = 2;
+        setTimeout(function () {
+            _this.isBlog = true;
+        }, 3000);
     }
     BindComponent.prototype.ngOnInit = function () {
     };
