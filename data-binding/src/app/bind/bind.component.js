@@ -14,6 +14,7 @@ var BindComponent = (function () {
         //只要编写代码的时候同一风格就可以了
         this.imgUrl = "http://placehold.it/400x400";
         this.isBlog = false;
+        this.isDev = true;
         this.divClass = {
             a: true,
             b: false,
@@ -27,6 +28,7 @@ var BindComponent = (function () {
                 b: true,
                 c: true
             };
+            _this.isDev = false;
         }, 3000);
     }
     BindComponent.prototype.ngOnInit = function () {

@@ -13,6 +13,7 @@ export class BindComponent implements OnInit {
   imgUrl:string = "http://placehold.it/400x400"
 
   isBlog:boolean = false;
+  isDev:boolean = true;
 
   divClass:any = {
     a:true,
@@ -29,7 +30,8 @@ export class BindComponent implements OnInit {
         a:false,
         b:true,
         c:true
-      }
+      };
+      this.isDev =false;
     },3000);
 
   }
