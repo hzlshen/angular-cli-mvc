@@ -33,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bind.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bind.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/bind/bind.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -43,12 +43,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bind.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bind.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/bind/bind.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="22">
+              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +82,8 @@
       <list>
         <option value="$PROJECT_DIR$/app/app.component.html" />
         <option value="$PROJECT_DIR$/app/bind/bind.component.css" />
-        <option value="$PROJECT_DIR$/app/bind/bind.component.ts" />
         <option value="$PROJECT_DIR$/app/bind/bind.component.html" />
+        <option value="$PROJECT_DIR$/app/bind/bind.component.ts" />
       </list>
     </option>
   </component>
@@ -92,8 +94,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="191" />
-    <option name="y" value="71" />
+    <option name="x" value="169" />
+    <option name="y" value="314" />
     <option name="width" value="1440" />
     <option name="height" value="930" />
   </component>
@@ -257,15 +259,15 @@
       <updated>1509464425001</updated>
       <workItem from="1509464433525" duration="1358000" />
       <workItem from="1509547573004" duration="3288000" />
-      <workItem from="1509634664205" duration="1599000" />
+      <workItem from="1509634664205" duration="2473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6245000" />
+    <option name="totallyTimeSpent" value="7119000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="191" y="71" width="1440" height="930" extended-state="0" />
+    <frame x="169" y="314" width="1440" height="930" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32912987" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -339,7 +341,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -375,19 +379,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bind/bind.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/bind/bind.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="61" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="61" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bind/bind.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
