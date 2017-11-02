@@ -12,6 +12,9 @@ export class BindComponent implements OnInit {
 
 
 
+  searchInput: FormControl = new FormControl();
+
+
   constructor() {
     Observable.from([1,2,3,4])
       .filter(e=>e%2 == 0)

@@ -9,6 +9,7 @@ var core_1 = require('@angular/core');
 var rxjs_1 = require("rxjs");
 var BindComponent = (function () {
     function BindComponent() {
+        this.searchInput = new FormControl();
         rxjs_1.Observable.from([1, 2, 3, 4])
             .filter(function (e) { return e % 2 == 0; })
             .map(function (e) { return e * e; })
