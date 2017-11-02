@@ -1,2 +1,2 @@
-<input [(ngModel)]="name">
+<input type="text" [value]="name" (input)="doOnInput($event)">
 {{name}}
