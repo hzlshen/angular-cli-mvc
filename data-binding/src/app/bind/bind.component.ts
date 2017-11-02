@@ -15,6 +15,11 @@ export class BindComponent implements OnInit {
   isBlog:boolean = false;
   isDev:boolean = true;
 
+  divStyle:any ={
+    color:'red',
+    background:'yellow'
+  };
+
   divClass:any = {
     a:true,
     b:false,
@@ -32,6 +37,11 @@ export class BindComponent implements OnInit {
         c:true
       };
       this.isDev =false;
+
+      this.divStyle ={
+        color:'yellow',
+        background:'red'
+      };
     },3000);
 
   }

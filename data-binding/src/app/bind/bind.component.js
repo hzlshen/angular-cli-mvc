@@ -15,6 +15,10 @@ var BindComponent = (function () {
         this.imgUrl = "http://placehold.it/400x400";
         this.isBlog = false;
         this.isDev = true;
+        this.divStyle = {
+            color: 'red',
+            background: 'yellow'
+        };
         this.divClass = {
             a: true,
             b: false,
@@ -29,6 +33,10 @@ var BindComponent = (function () {
                 c: true
             };
             _this.isDev = false;
+            _this.divStyle = {
+                color: 'yellow',
+                background: 'red'
+            };
         }, 3000);
     }
     BindComponent.prototype.ngOnInit = function () {
