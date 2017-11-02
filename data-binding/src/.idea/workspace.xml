@@ -36,11 +36,9 @@
       <file leaf-file-name="bind.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/bind/bind.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,8 +46,8 @@
       <file leaf-file-name="bind.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/bind/bind.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+            <state relative-caret-position="330">
+              <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -82,8 +80,8 @@
       <list>
         <option value="$PROJECT_DIR$/app/app.component.html" />
         <option value="$PROJECT_DIR$/app/bind/bind.component.css" />
-        <option value="$PROJECT_DIR$/app/bind/bind.component.ts" />
         <option value="$PROJECT_DIR$/app/bind/bind.component.html" />
+        <option value="$PROJECT_DIR$/app/bind/bind.component.ts" />
       </list>
     </option>
   </component>
@@ -259,12 +257,12 @@
       <updated>1509464425001</updated>
       <workItem from="1509464433525" duration="1358000" />
       <workItem from="1509547573004" duration="3288000" />
-      <workItem from="1509634664205" duration="600000" />
+      <workItem from="1509634664205" duration="1524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5246000" />
+    <option name="totallyTimeSpent" value="6170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="191" y="71" width="1440" height="930" extended-state="0" />
@@ -317,9 +315,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="946">
           <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -335,9 +331,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -383,19 +377,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/bind/bind.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        <state relative-caret-position="330">
+          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/bind/bind.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
