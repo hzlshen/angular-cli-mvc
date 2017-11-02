@@ -259,15 +259,15 @@
       <updated>1509464425001</updated>
       <workItem from="1509464433525" duration="1358000" />
       <workItem from="1509547573004" duration="3288000" />
-      <workItem from="1509634664205" duration="2473000" />
+      <workItem from="1509634664205" duration="2603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7119000" />
+    <option name="totallyTimeSpent" value="7249000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="169" y="314" width="1440" height="930" extended-state="0" />
+    <frame x="169" y="314" width="1440" height="930" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32912987" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
