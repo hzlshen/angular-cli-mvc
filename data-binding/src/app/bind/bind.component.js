@@ -16,6 +16,9 @@ var BindComponent = (function () {
     }
     BindComponent.prototype.ngOnInit = function () {
     };
+    BindComponent.prototype.onKey = function (event) {
+        console.log(event.target.value);
+    };
     BindComponent = __decorate([
         core_1.Component({
             selector: 'app-bind',

@@ -26,6 +26,8 @@ export class BindComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  onKey(event){
+    console.log(event.target.value);
+  }
 
 }
