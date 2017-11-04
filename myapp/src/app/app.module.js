@@ -18,7 +18,7 @@ var product_detail_component_1 = require('./product-detail/product-detail.compon
 var home_component_1 = require('./home/home.component');
 var router_1 = require('@angular/router');
 var product_service_1 = require("./shared/product.service");
-var _1 = require('@angular/');
+var forms_1 = require('@angular/forms');
 //路由配置
 var routeConfig = [
     { path: '', component: home_component_1.HomeComponent },
@@ -38,13 +38,13 @@ var AppModule = (function () {
                 product_component_1.ProductComponent,
                 stars_component_1.StarsComponent,
                 product_detail_component_1.ProductDetailComponent,
-                HomeC,
-                FilterPipeomponent
+                home_component_1.HomeComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
+                forms_1.FormsModule,
                 router_1.RouterModule.forRoot(routeConfig),
-                _1.ReactiveFormsModule
+                forms_1.ReactiveFormsModule
             ],
             providers: [product_service_1.ProductService],
             bootstrap: [app_component_1.AppComponent]

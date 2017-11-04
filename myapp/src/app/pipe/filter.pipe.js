@@ -9,8 +9,14 @@ var core_1 = require('@angular/core');
 var FilterPipe = (function () {
     function FilterPipe() {
     }
-    FilterPipe.prototype.transform = function (value, args) {
-        return null;
+    FilterPipe.prototype.transform = function (list, filterField, keyword) {
+        if (!filterField || !keyword) {
+            return list;
+        }
+        return list.filter(function (item) {
+            var fiedValue = item[filterField];
+            return fiedValue.indexOf(keyword) >= 0;
+        });
     };
     FilterPipe = __decorate([
         core_1.Pipe({

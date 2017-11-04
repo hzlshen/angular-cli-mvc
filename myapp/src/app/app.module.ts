@@ -12,8 +12,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { HomeComponent } from './home/home.component';
 import { Routes,RouterModule } from '@angular/router';
 import {ProductService} from "./shared/product.service";
-import { ReactiveFormsModule } from '@angular/';
-import { FilterPipe } from './pipe/filter.pipe'
+import { FilterPipe } from './pipe/filter.pipe';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 //路由配置
 const routeConfig:Routes =[
@@ -33,11 +33,11 @@ const routeConfig:Routes =[
     ProductComponent,
     StarsComponent,
     ProductDetailComponent,
-    HomeC,
-    FilterPipeomponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(routeConfig),
     ReactiveFormsModule
   ],

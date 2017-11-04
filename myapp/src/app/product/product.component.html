@@ -5,7 +5,7 @@
       <input class="form-control" placeholder="请输入商品名称" [formControl]="titleFilter">
     </div>
   </div>
-<div *ngFor="let product of products" class="col-md-4 col-sm-4">
+<div *ngFor="let product of products | filter :'title':keyword " class="col-md-4 col-sm-4">
   <div class="thumbnail">
     <img src="http://placehold.it/320x150" alt="">
     <div class="caption">
