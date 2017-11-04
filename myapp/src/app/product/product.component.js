@@ -12,8 +12,8 @@ var ProductComponent = (function () {
     function ProductComponent(productService) {
         var _this = this;
         this.productService = productService;
-        this.titleFolter = new forms_1.FormControl();
-        this.titleFolter.valueChanges
+        this.titleFilter = new forms_1.FormControl();
+        this.titleFilter.valueChanges
             .debounceTime(500)
             .subscribe(function (value) { return _this.keyword = value; });
     }

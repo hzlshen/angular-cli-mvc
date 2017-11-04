@@ -13,11 +13,11 @@ export class ProductComponent implements OnInit {
 
   private keyword :string;
 
-  private titleFolter:FormControl = new FormControl();
+  private titleFilter:FormControl = new FormControl();
 
 
   constructor(private productService:ProductService) {
-    this.titleFolter.valueChanges
+    this.titleFilter.valueChanges
       .debounceTime(500)
       .subscribe(
         value=>this.keyword = value
