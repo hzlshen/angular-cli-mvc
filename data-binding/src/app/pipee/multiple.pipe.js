@@ -6,22 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
-var BindComponent = (function () {
-    function BindComponent() {
-        //管道负责处理原始值到显示值的转换
-        this.birthday = new Date();
-        this.pi = 3.1415936;
+var MultiplePipe = (function () {
+    function MultiplePipe() {
     }
-    BindComponent.prototype.ngOnInit = function () {
+    MultiplePipe.prototype.transform = function (value, args) {
+        return null;
     };
-    BindComponent = __decorate([
-        core_1.Component({
-            selector: 'app-bind',
-            templateUrl: './bind.component.html',
-            styleUrls: ['./bind.component.css']
+    MultiplePipe = __decorate([
+        core_1.Pipe({
+            name: 'multiple'
         })
-    ], BindComponent);
-    return BindComponent;
+    ], MultiplePipe);
+    return MultiplePipe;
 }());
-exports.BindComponent = BindComponent;
-//# sourceMappingURL=bind.component.js.map
+exports.MultiplePipe = MultiplePipe;
+//# sourceMappingURL=multiple.pipe.js.map

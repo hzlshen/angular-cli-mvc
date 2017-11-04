@@ -10,6 +10,7 @@ var core_1 = require('@angular/core');
 var forms_1 = require("@angular/forms");
 var app_component_1 = require('./app.component');
 var bind_component_1 = require('./bind/bind.component');
+var multiple_pipe_1 = require('./pipee/multiple.pipe');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,7 +18,8 @@ var AppModule = (function () {
         core_1.NgModule({
             declarations: [
                 app_component_1.AppComponent,
-                bind_component_1.BindComponent
+                bind_component_1.BindComponent,
+                multiple_pipe_1.MultiplePipe
             ],
             imports: [
                 platform_browser_1.BrowserModule,

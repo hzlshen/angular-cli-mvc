@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
 import { BindComponent } from './bind/bind.component';
+import { MultiplePipe } from './pipee/multiple.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BindComponent
+    BindComponent,
+    MultiplePipe
   ],
   imports: [
     BrowserModule,

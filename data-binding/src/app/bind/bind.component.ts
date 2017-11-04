@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from "rxjs";
-import { FormControl } from "@angular/forms";
-import 'rxjs/Rx';
 
 @Component({
   selector: 'app-bind',
@@ -9,36 +6,19 @@ import 'rxjs/Rx';
   styleUrls: ['./bind.component.css']
 })
 
-//响应式编程就是异步数据流编程
 export class BindComponent implements OnInit {
 
+  //管道负责处理原始值到显示值的转换
 
-
-  searchInput: FormControl = new FormControl();
+  birthday:Date = new Date();
+  pi:number =3.1415936;
 
 
   constructor() {
-    this.searchInput.valueChanges
-      .debounceTime(500)
-      .subscribe(stockCode=>this.getStockInfo(stockCode));
-
-    Observable.from([1,2,3,4])
-      .filter(e=>e%2 == 0)
-      .map(e=>e*e)
-      .subscribe(
-        e=>console.log(e),
-      err=>console.log(err),
-        ()=>console.log("结束啦")
-      )
 
   }
 
   ngOnInit() {
   }
-  onKey(value:string){
-    console.log(value);
-  }
-  getStockInfo(value:string){
-    console.log(value);
-  }
+
 }
