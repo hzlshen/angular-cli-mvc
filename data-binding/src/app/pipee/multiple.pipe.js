@@ -10,7 +10,10 @@ var MultiplePipe = (function () {
     function MultiplePipe() {
     }
     MultiplePipe.prototype.transform = function (value, args) {
-        return null;
+        if (!args) {
+            args = 1;
+        }
+        return value * args;
     };
     MultiplePipe = __decorate([
         core_1.Pipe({

@@ -11,6 +11,7 @@ var BindComponent = (function () {
         //管道负责处理原始值到显示值的转换
         this.birthday = new Date();
         this.pi = 3.1415936;
+        this.size = 7;
     }
     BindComponent.prototype.ngOnInit = function () {
     };
