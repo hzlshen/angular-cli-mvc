@@ -6,9 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
+require("rxjs/Rx");
 var ProductComponent = (function () {
     function ProductComponent(productService) {
+        var _this = this;
         this.productService = productService;
+        this.titleFolter = new forms_1.FormControl();
+        this.titleFolter.valueChanges
+            .debounceTime(500)
+            .subscribe(function (value) { return _this.keyword = value; });
     }
     //组件生命周期钩子
     //这个方法会在组件实例化后调用一次
