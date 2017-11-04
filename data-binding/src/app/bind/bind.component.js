@@ -7,9 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var rxjs_1 = require("rxjs");
+var forms_1 = require("@angular/forms");
+require('rxjs/Rx');
 var BindComponent = (function () {
     function BindComponent() {
-        this.searchInput = new FormControl();
+        var _this = this;
+        this.searchInput = new forms_1.FormControl();
+        this.searchInput.valueChanges
+            .debounceTime(500)
+            .subscribe(function (stockCode) { return _this.getStockInfo(stockCode); });
         rxjs_1.Observable.from([1, 2, 3, 4])
             .filter(function (e) { return e % 2 == 0; })
             .map(function (e) { return e * e; })
@@ -18,6 +24,9 @@ var BindComponent = (function () {
     BindComponent.prototype.ngOnInit = function () {
     };
     BindComponent.prototype.onKey = function (value) {
+        console.log(value);
+    };
+    BindComponent.prototype.getStockInfo = function (value) {
         console.log(value);
     };
     BindComponent = __decorate([

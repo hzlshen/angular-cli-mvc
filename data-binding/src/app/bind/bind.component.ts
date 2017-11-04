@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from "rxjs";
+import { FormControl } from "@angular/forms";
+import 'rxjs/Rx';
 
 @Component({
   selector: 'app-bind',
@@ -16,6 +18,10 @@ export class BindComponent implements OnInit {
 
 
   constructor() {
+    this.searchInput.valueChanges
+      .debounceTime(500)
+      .subscribe(stockCode=>this.getStockInfo(stockCode));
+
     Observable.from([1,2,3,4])
       .filter(e=>e%2 == 0)
       .map(e=>e*e)
@@ -32,5 +38,7 @@ export class BindComponent implements OnInit {
   onKey(value:string){
     console.log(value);
   }
-
+  getStockInfo(value:string){
+    console.log(value);
+  }
 }
