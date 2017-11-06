@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { OrderComponent } from './order/order.component';
 import {FormsModule} from '@angular/forms';
+import { PriceQuoteeComponent } from './price-quotee/price-quotee.component';
 @NgModule({
   declarations: [
     AppComponent,
-    OrderComponent
+    OrderComponent,
+    PriceQuoteeComponent
   ],
   imports: [
     BrowserModule,
