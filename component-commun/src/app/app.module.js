@@ -10,6 +10,7 @@ var core_1 = require('@angular/core');
 var app_component_1 = require('./app.component');
 var order_component_1 = require('./order/order.component');
 var forms_1 = require('@angular/forms');
+var price_quotee_component_1 = require('./price-quotee/price-quotee.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,7 +18,8 @@ var AppModule = (function () {
         core_1.NgModule({
             declarations: [
                 app_component_1.AppComponent,
-                order_component_1.OrderComponent
+                order_component_1.OrderComponent,
+                price_quotee_component_1.PriceQuoteeComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,

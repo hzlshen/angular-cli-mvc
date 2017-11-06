@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PriceQuoteeComponent implements OnInit {
 
+  stockCode:string = "IBM";
+
+  price:number;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+
+export class PriceQuote{
+  constructor(
+    public stockCode:string,
+    public lastPrice:number
+  ){
+
+  }
 }

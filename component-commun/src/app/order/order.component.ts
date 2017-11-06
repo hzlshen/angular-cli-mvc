@@ -1,5 +1,5 @@
 import { Component, OnInit ,Input} from '@angular/core';
-import {ActivateRoute} from '@angular/router';
+// import {ActivateRoute} from '@angular/router';
 
 @Component({
   selector: 'app-order',
@@ -17,7 +17,7 @@ export class OrderComponent implements OnInit {
   @Input()
   amount:number;
 
-  constructor(routeInfo:ActivateRoute) {
+  constructor() {
     setInterval(()=>{
       this.stockCode="Apple"
     },3000)
