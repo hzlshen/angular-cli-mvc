@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var OrderComponent = (function () {
-    function OrderComponent() {
+    function OrderComponent(routeInfo) {
         var _this = this;
         setInterval(function () {
             _this.stockCode = "Apple";
