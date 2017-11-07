@@ -11,7 +11,12 @@ export class PriceQuoteeComponent implements OnInit {
 
   price:number;
 
-  constructor() { }
+  constructor() {
+    setInterval(()=>{
+      let priceQuotee : PriceQuote = new PriceQuote(this.stockCode,100*Math.random());
+      this.price = priceQuotee.lastPrice;
+    },1000)
+  }
 
   ngOnInit() {
   }
