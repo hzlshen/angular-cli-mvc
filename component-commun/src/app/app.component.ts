@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {PriceQuote} from './price-quotee/price-quotee.component';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   stock = "";
+
+  priceQuote:PriceQuote = new PriceQuote("",0);
 
   title = 'app';
 }
