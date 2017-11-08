@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Qutput } from '@angular/core';
+import { Component, OnInit, EventEmitter,Output } from '@angular/core';
 
 @Component({
   selector: 'app-price-quotee',
@@ -11,7 +11,7 @@ export class PriceQuoteeComponent implements OnInit {
 
   price:number;
 
-  @Qutput()
+  @Output()
   lastPrice:EventEmitter<PriceQuote> = new EventEmitter();
 
   constructor() {
