@@ -6,8 +6,5 @@
   <!--<input type="text" name="stock" placeholder="请输入股票代码" [(ngModel)]="stock">-->
   <!--<app-order [stockCode]="stock" [amount]="100"></app-order>-->
 <!--</div>-->
-<app-price-quotee (priceChange)="priceQuoteHandler($event)"></app-price-quotee>
-<div>
-  这是在报价组件外部，股票代码是{{priceQuote.stockCode}}
-  股票价格是{{priceQuote.lastPrice}}
-</div>
+<app-price-quotee (buy)="buyHandler($event)"></app-price-quotee>
+<app-order [priceQuote]="priceQuote"></app-order>

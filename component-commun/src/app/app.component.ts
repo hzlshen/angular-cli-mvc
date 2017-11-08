@@ -12,7 +12,7 @@ export class AppComponent {
 
   priceQuote:PriceQuote = new PriceQuote("",0);
 
-  priceQuoteHandler(event:PriceQuote){
+  buyHandler(event:PriceQuote){
     this.priceQuote = event;
   }
 
