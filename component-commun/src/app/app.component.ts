@@ -12,5 +12,9 @@ export class AppComponent {
 
   priceQuote:PriceQuote = new PriceQuote("",0);
 
+  priceQuoteHandler(event:PriceQuote){
+    this.priceQuote = event;
+  }
+
   title = 'app';
 }

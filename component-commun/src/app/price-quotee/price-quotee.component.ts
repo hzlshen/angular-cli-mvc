@@ -11,7 +11,7 @@ export class PriceQuoteeComponent implements OnInit {
 
   price:number;
 
-  @Output()
+  @Output('priceChange')
   lastPrice:EventEmitter<PriceQuote> = new EventEmitter();
 
   constructor() {
