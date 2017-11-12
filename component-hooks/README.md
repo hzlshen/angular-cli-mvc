@@ -8,4 +8,4 @@
 
 ![Image text](https://github.com/hzlshen/Imgage_box/blob/master/ngChanges1.png);
 
-![Image text](https://github.com/hzlshen/Imgage_box/blob/master/ngChanges2.png);
+![Image text](https://github.com/hzlshen/Imgage_box/blob/master/naChanges2.png);
