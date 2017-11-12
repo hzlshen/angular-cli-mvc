@@ -1,1 +1,8 @@
-<app-life [name]="title"></app-life>
+<!--<app-life [name]="title"></app-life>-->
+<div class="parent">
+  <h2>我是父组件</h2>
+  <div>问候语：<input type="text" [(ngModel)]="greeting" name="get"></div>
+  <div>姓名：<input type="text" [(ngModel)]="user.name" name="user"></div>
+
+  <app-child [greeting]="greeting" [user]="user"></app-child>
+</div>
