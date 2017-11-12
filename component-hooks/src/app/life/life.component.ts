@@ -13,6 +13,7 @@ let logIndex :number = 1;
 export class LifeComponent implements OnInit,OnChanges,DoCheck,AfterContentInit,AfterContentChecked,AfterViewInit,AfterViewChecked,OnDestroy {
 
   //显示钩子调用顺序
+
   @Input()
   name:string;
 
