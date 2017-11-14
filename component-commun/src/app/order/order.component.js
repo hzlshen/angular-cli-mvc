@@ -9,19 +9,12 @@ var core_1 = require('@angular/core');
 // import {ActivateRoute} from '@angular/router';
 var OrderComponent = (function () {
     function OrderComponent() {
-        var _this = this;
-        setInterval(function () {
-            _this.stockCode = "Apple";
-        }, 3000);
     }
     OrderComponent.prototype.ngOnInit = function () {
     };
     __decorate([
         core_1.Input()
-    ], OrderComponent.prototype, "stockCode");
-    __decorate([
-        core_1.Input()
-    ], OrderComponent.prototype, "amount");
+    ], OrderComponent.prototype, "priceQuote");
     OrderComponent = __decorate([
         core_1.Component({
             selector: 'app-order',
