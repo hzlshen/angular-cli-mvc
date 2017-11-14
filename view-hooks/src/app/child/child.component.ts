@@ -12,4 +12,8 @@ export class ChildComponent implements OnInit {
   ngOnInit() {
   }
 
+  greeting(name:string){
+    console.log("hello"+name);
+  }
+
 }

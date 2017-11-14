@@ -217,7 +217,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../view-hooks/src" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="E:/Program Files/node" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/angular-cli-mvc/component-hooks/src/app/child/child.component.ts" />
@@ -298,15 +298,15 @@
       <workItem from="1510157304370" duration="98000" />
       <workItem from="1510190565586" duration="1865000" />
       <workItem from="1510497956406" duration="6519000" />
-      <workItem from="1510673162144" duration="200000" />
+      <workItem from="1510673162144" duration="719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8682000" />
+    <option name="totallyTimeSpent" value="9201000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="532" y="5" width="1409" height="1038" extended-state="1" />
+    <frame x="532" y="5" width="1409" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
