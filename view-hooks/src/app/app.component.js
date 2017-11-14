@@ -10,8 +10,23 @@ var AppComponent = (function () {
     function AppComponent() {
         this.title = 'app';
     }
+    //这两个方法 是在组件全部加载完成显示以后 才会被调用
+    //不允许在视图组装好之后再去刷新这个视图的
+    AppComponent.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        console.log("父组件的视图初始化完成");
+        setTimeout(function () {
+            _this.message = "hello";
+        }, 0);
+    };
+    AppComponent.prototype.ngAfterViewChecked = function () {
+        console.log("父组件的视图变更检测完成");
+    };
     AppComponent.prototype.ngOnInit = function () {
-        this.child1.greeting("Tom");
+        var _this = this;
+        setInterval(function () {
+            _this.child1.greeting("Tom");
+        }, 5000);
     };
     __decorate([
         core_1.ViewChild("child1")

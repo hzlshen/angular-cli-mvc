@@ -9,6 +9,13 @@ var core_1 = require('@angular/core');
 var ChildComponent = (function () {
     function ChildComponent() {
     }
+    //这两个方法 是在组件全部加载完成显示以后 才会被调用
+    ChildComponent.prototype.ngAfterViewInit = function () {
+        console.log("子组件的视图初始化完成");
+    };
+    ChildComponent.prototype.ngAfterViewChecked = function () {
+        console.log("子组件的视图变更检测完成");
+    };
     ChildComponent.prototype.ngOnInit = function () {
     };
     ChildComponent.prototype.greeting = function (name) {
