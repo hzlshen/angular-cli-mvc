@@ -1,12 +1,3 @@
-<div class="wrapper">
-<h2>我是父组件</h2>
-  <div>这个div定义在父组件中</div>
-  <app-child>
-    <div class="header">这是页头。这个div是父组件投影到子组件..title:{{title}}</div>
-    <div class="footer">这是页脚。这个div是父组件投影到子组件</div>
-  </app-child>
-</div>
-
-<div [innerHTML]="divContent">
-
-</div>
+<a [routerLink]="['/']">child1</a>
+<a [routerLink]="['/child2']">child2</a>
+<router-outlet></router-outlet>
