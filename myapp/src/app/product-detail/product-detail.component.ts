@@ -13,6 +13,9 @@ export class ProductDetailComponent implements OnInit {
 
   comments:Comment[];
 
+  //用来保存星级和评价内容
+  newRating:number = 5;
+  newComment:string ="";
 
   constructor(private routeInfo : ActivatedRoute,
               private productService:ProductService
@@ -22,6 +25,10 @@ export class ProductDetailComponent implements OnInit {
     let productId:number = this.routeInfo.snapshot.params["productId"];
     this.product = this.productService.getProduct(productId);
     this.comments = this.productService.getCommentsForProductId(productId);
+  }
+  addComment(){
+    let comment = new Comment(0,this.product.id,new Date().toISOString(),"someone",this.newRating,this.newComment);
+    this.comments.unshift(comment);
   }
 
 }
