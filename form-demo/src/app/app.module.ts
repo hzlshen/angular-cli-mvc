@@ -1,16 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import {AppComponent} from "./app.component";
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { TemplateFormComponent } from './template-form/template-form.component';
-import {AppComponent} from "./app.component";
 
 
 //响应式表单需要引入ReactiveFormsModule
 @NgModule({
   declarations: [
-    TemplateFormComponent,
-    AppComponent
+    AppComponent,
+    TemplateFormComponent
   ],
   imports: [
     BrowserModule,
