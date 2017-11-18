@@ -42,3 +42,5 @@ export class StarsComponent implements OnInit,OnChanges {
   }
 
 }
+
+//小结：父子之间应该避免直接访问彼此的内部，而应该通过输入输出属性来通讯
