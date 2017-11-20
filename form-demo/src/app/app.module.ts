@@ -4,13 +4,15 @@ import {AppComponent} from "./app.component";
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { TemplateFormComponent } from './template-form/template-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 
 //响应式表单需要引入ReactiveFormsModule
 @NgModule({
   declarations: [
     AppComponent,
-    TemplateFormComponent
+    Tem,
+    ReactiveFormComponentplateFormComponent
   ],
   imports: [
     BrowserModule,
