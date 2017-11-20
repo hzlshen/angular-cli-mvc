@@ -11,8 +11,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 @NgModule({
   declarations: [
     AppComponent,
-    Tem,
-    ReactiveFormComponentplateFormComponent
+    TemplateFormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
