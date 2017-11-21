@@ -12,16 +12,18 @@ export class ReactiveFormComponent implements OnInit {
     dateRange:new FormGroup({
       form:new FormControl(),
       to:new FormControl()
-    })
+    }),
+    emails:new FormArray([
+      new FormControl('a@a.com'),
+      new FormControl('b@b.com'),
+    ]),
+    username:new FormControl('aaa')
 
   });
 
-  username:FormControl = new FormControl('aaa');
 
-  emails:FormArray = new FormArray([
-    new FormControl('a@a.com'),
-    new FormControl('b@b.com'),
-  ])
+
+
 
   constructor() { }
 
@@ -31,6 +33,10 @@ export class ReactiveFormComponent implements OnInit {
   onSubmit(){
     console.log(this.formModel.value);
 
+  }
+  addEmail(){
+    let emails = this.formModel.get("emails") as FormArray;
+    emails.push(new FormControl());
   }
 
 }

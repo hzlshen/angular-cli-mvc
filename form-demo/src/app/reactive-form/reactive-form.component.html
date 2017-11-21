@@ -1,14 +1,21 @@
+
+<!--注意：所有指令都是以form开头的 如果指令以name结尾 不需要[] -->
+<!--如果不以name结尾 则需要属性绑定语法[]-->
+<!--以name结尾的指令 只能在formGroup里-->
 <!--formGroup接管form表单-->
 <form [formGroup]="formModel" (submit)="onSubmit()">
+  <input type="text" formControlName="username">
   <div formGroupName="dateRange">
     起始日期：<input type="date" formControlName="form">
     截止日期：<input type="date" formControlName="to">
   </div>
   <div>
-    <ul>
-      <li><input type="text"></li>
+    <ul formArrayName="emails">
+      <li *ngFor="let e of this.formModel.get('emails').controls; let i = index;">
+        <input [formControlName]="i" type="text">
+      </li>
     </ul>
-    <button type="button">增加email</button>
+    <button type="button" (click)="addEmail()">增加email</button>
   </div>
   <div>
     <button type="submit">保存</button>
