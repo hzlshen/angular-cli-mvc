@@ -172,7 +172,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../myapp/src" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
@@ -206,12 +206,12 @@
       <workItem from="1511022895330" duration="3472000" />
       <workItem from="1511106216111" duration="809000" />
       <workItem from="1511187969943" duration="3116000" />
-      <workItem from="1511270791324" duration="4486000" />
+      <workItem from="1511270791324" duration="4751000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11883000" />
+    <option name="totallyTimeSpent" value="12148000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="608" y="66" width="1440" height="928" extended-state="0" />
