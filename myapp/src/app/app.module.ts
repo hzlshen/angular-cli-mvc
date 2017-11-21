@@ -14,7 +14,7 @@ import { Routes,RouterModule } from '@angular/router';
 import {ProductService} from "./shared/product.service";
 import { FilterPipe } from './pipe/filter.pipe';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { ReactiveRegistComponent } from './reactive-regist/reactive-regist.component';
+
 
 //路由配置
 const routeConfig:Routes =[
@@ -35,8 +35,7 @@ const routeConfig:Routes =[
     StarsComponent,
     ProductDetailComponent,
     HomeComponent,
-    Fi,
-    ReactiveRegistComponentlterPipe
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
