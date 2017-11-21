@@ -1,7 +1,8 @@
-<form action="">
-  <div>
-    起始日期：<input type="date">
-    截止日期：<input type="date">
+<!--formGroup接管form表单-->
+<form [formGroup]="formModel" (submit)="onSubmit()">
+  <div formGroupName="dateRange">
+    起始日期：<input type="date" formControlName="form">
+    截止日期：<input type="date" formControlName="to">
   </div>
   <div>
     <ul>

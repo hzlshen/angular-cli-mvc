@@ -8,11 +8,15 @@ import {FormControl, FormGroup, FormArray} from "@angular/forms";
 })
 export class ReactiveFormComponent implements OnInit {
 
-  username:FormControl = new FormControl('aaa');
   formModel:FormGroup =new FormGroup({
+    dateRange:new FormGroup({
       form:new FormControl(),
       to:new FormControl()
+    })
+
   });
+
+  username:FormControl = new FormControl('aaa');
 
   emails:FormArray = new FormArray([
     new FormControl('a@a.com'),
@@ -22,6 +26,11 @@ export class ReactiveFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit(){
+    console.log(this.formModel.value);
+
   }
 
 }
