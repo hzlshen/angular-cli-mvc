@@ -37,8 +37,8 @@
       <file leaf-file-name="reactive-regist.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/reactive-regist/reactive-regist.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="28" />
+            <state relative-caret-position="242">
+              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="30" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -142,8 +142,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="448" />
-    <option name="y" value="48" />
+    <option name="x" value="763" />
+    <option name="y" value="43" />
     <option name="width" value="1440" />
     <option name="height" value="928" />
   </component>
@@ -239,15 +239,15 @@
       <workItem from="1511187969943" duration="3116000" />
       <workItem from="1511270791324" duration="4751000" />
       <workItem from="1511282279704" duration="20000" />
-      <workItem from="1511364776532" duration="1086000" />
+      <workItem from="1511364776532" duration="1740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13254000" />
+    <option name="totallyTimeSpent" value="13908000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="448" y="48" width="1440" height="928" extended-state="0" />
+    <frame x="763" y="43" width="1440" height="928" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -644,8 +644,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/reactive-regist/reactive-regist.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="28" />
+        <state relative-caret-position="242">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="30" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
