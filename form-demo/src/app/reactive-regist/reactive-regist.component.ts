@@ -9,8 +9,11 @@ import {FormGroup,FormControl,FormBuilder,AbstractControl,Validators} from '@ang
 export class ReactiveRegistComponent implements OnInit {
 
   //表单校验
-  xxxx(control:AbstractControl):{[key:string]: any}{
-    return null;
+  mobileValidator(control:FormControl):any{
+    var myrea = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+    let valid = myrea.test(control.value);
+    console.log("mobile的校验结果是："+valid);
+    return valid?null :{mobile:true};
   }
 
   formModel:FormGroup;
@@ -19,7 +22,7 @@ export class ReactiveRegistComponent implements OnInit {
   constructor(fb:FormBuilder) {
     this.formModel = fb.group({
       username:['',[Validators.required,Validators.minLength(6)]],
-      mobile:[''],
+      mobile:['',this.mobileValidator],
       passwordsGroup:fb.group({
         password:[''],
         pconfirm:[''],
@@ -31,6 +34,10 @@ export class ReactiveRegistComponent implements OnInit {
   }
 
   onSubmit(){
+    let isValid:boolean = this.formModel.get("username").valid;
+    console.log("username的校验结果"+isValid);
+    let errors:any = this.formModel.get("username").errors;
+    console.log("username错误信息是："+JSON.stringify(errors));
     console.log(this.formModel.value);
   }
 
