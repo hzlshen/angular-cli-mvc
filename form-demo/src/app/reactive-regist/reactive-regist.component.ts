@@ -16,6 +16,14 @@ export class ReactiveRegistComponent implements OnInit {
     return valid?null :{mobile:true};
   }
 
+  equalValidator(group:FormGroup):any{
+    let password:FormControl = group.get("password") as FormControl;
+    let pconfirm:FormControl = group.get("password") as FormControl;
+    let valid :boolean = (password.value == pconfirm.value);
+    console.log("密码校验通过："+valid);
+    return valid ? null :{equal:true}
+  }
+
   formModel:FormGroup;
 
   //formbuilder重构formGroup表单结构
@@ -26,7 +34,7 @@ export class ReactiveRegistComponent implements OnInit {
       passwordsGroup:fb.group({
         password:[''],
         pconfirm:[''],
-      })
+      },{validator:this.equalValidator})
     });
   }
 
