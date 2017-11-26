@@ -32,7 +32,13 @@ export class ReactiveRegistComponent implements OnInit {
     console.log("username的校验结果"+isValid);
     let errors:any = this.formModel.get("username").errors;
     console.log("username错误信息是："+JSON.stringify(errors));
-    console.log(this.formModel.value);
+
+    if(this.formModel.valid){
+      console.log(this.formModel.value);
+    }
+
+
+
   }
 
 }

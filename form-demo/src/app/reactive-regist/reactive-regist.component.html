@@ -1,9 +1,21 @@
 <form [formGroup]="formModel" (click)="onSubmit()">
   <div>用户名: <input type="text" formControlName="username"></div>
+  <div [hidden]="!formModel.hasError('required','username')">
+    用户名是必填项
+  </div>
+  <div [hidden]="!formModel.hasError('minlength','username')">
+    用户名最小长度是6
+  </div>
   <div>手机号: <input type="number" formControlName="mobile"></div>
+  <div [hidden]="!formModel.hasError('mobile','mobile')">
+    请输入正确的手机号
+  </div>
   <div formGroupName="passwordsGroup">
   <div>密码: <input type="password" formControlName="password"></div>
   <div>确认密码: <input  type="password" formControlName="pconfirm"></div>
+    <div [hidden]="!formModel.hasError('equal','passwordsGroup')">
+      密码和确认密码不匹配
+    </div>
   </div>
 
   <button type="submit">注册</button>

@@ -24,21 +24,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reactive-regist.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="reactive-regist.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/reactive-regist/reactive-regist.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+            <state relative-caret-position="198">
+              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reactive-regist.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reactive-regist.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/reactive-regist/reactive-regist.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            <state relative-caret-position="264">
+              <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="20" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -139,10 +139,10 @@
         <option value="$PROJECT_DIR$/app/app.module.ts" />
         <option value="$PROJECT_DIR$/app/reactive-form/reactive-form.component.ts" />
         <option value="$PROJECT_DIR$/app/reactive-form/reactive-form.component.html" />
-        <option value="$PROJECT_DIR$/app/reactive-regist/reactive-regist.component.html" />
         <option value="$PROJECT_DIR$/app/app.component.html" />
         <option value="$PROJECT_DIR$/app/validator/validator.ts" />
         <option value="$PROJECT_DIR$/app/reactive-regist/reactive-regist.component.ts" />
+        <option value="$PROJECT_DIR$/app/reactive-regist/reactive-regist.component.html" />
       </list>
     </option>
   </component>
@@ -266,12 +266,12 @@
       <workItem from="1511364776532" duration="1764000" />
       <workItem from="1511535363703" duration="1122000" />
       <workItem from="1511623460500" duration="469000" />
-      <workItem from="1511709225795" duration="821000" />
+      <workItem from="1511709225795" duration="2888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16344000" />
+    <option name="totallyTimeSpent" value="18411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="557" y="42" width="1440" height="928" extended-state="0" />
@@ -698,22 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/reactive-regist/reactive-regist.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/template-form/template-form.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -740,13 +724,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/template-form/template-form.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/reactive-regist/reactive-regist.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        <state relative-caret-position="264">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reactive-regist/reactive-regist.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
