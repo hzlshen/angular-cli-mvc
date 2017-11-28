@@ -1,10 +1,12 @@
 <form [formGroup]="formModel" (click)="onSubmit()">
   <div>用户名: <input type="text" formControlName="username"></div>
-  <div [hidden]="!formModel.hasError('required','username')">
-    用户名是必填项
-  </div>
-  <div [hidden]="!formModel.hasError('minlength','username')">
-    用户名最小长度是6
+  <div [hidden]="formModel.get('username').valid || formModel.get('username').untouched">
+    <div [hidden]="!formModel.hasError('required','username')">
+      用户名是必填项
+    </div>
+    <div [hidden]="!formModel.hasError('minlength','username')">
+      用户名最小长度是6
+    </div>
   </div>
   <div>手机号: <input type="number" formControlName="mobile"></div>
   <div [hidden]="!formModel.hasError('mobile','mobile')">
