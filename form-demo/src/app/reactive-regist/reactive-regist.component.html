@@ -1,5 +1,5 @@
 <form [formGroup]="formModel" (click)="onSubmit()">
-  <div>用户名: <input type="text" formControlName="username"></div>
+  <div>用户名: <input [class.hasError]="formModel.get('username').invalid && formModel.get('username').touched" type="text" formControlName="username"></div>
   <div [hidden]="formModel.get('username').valid || formModel.get('username').untouched">
     <div [hidden]="!formModel.hasError('required','username')">
       用户名是必填项
