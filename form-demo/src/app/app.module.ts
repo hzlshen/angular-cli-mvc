@@ -7,6 +7,7 @@ import {HttpModule} from '@angular/http';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import{ReactiveRegistComponent} from './reactive-regist/reactive-regist.component';
+import { MobileValidatorDirective } from './directives/mobile-validator.directive';
 
 
 //响应式表单需要引入ReactiveFormsModule
@@ -16,6 +17,7 @@ import{ReactiveRegistComponent} from './reactive-regist/reactive-regist.componen
     TemplateFormComponent,
     ReactiveFormComponent,
     ReactiveRegistComponent,
+    MobileValidatorDirective,
   ],
   imports: [
     BrowserModule,
