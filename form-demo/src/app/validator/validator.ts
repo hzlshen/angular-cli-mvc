@@ -1,7 +1,7 @@
 
 //表单校验
 import {FormControl, FormGroup} from "@angular/forms/src/model";
-import {Observable} from "rxjs/Observable";
+import {Observable} from "rxjs";
 
 export function  mobileValidator(control:FormControl):any{
   var myrea = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;

@@ -9,9 +9,15 @@
     </div>
   </div>
   <div>手机号: <input type="number" formControlName="mobile"></div>
-  <div [hidden]="!formModel.hasError('mobile','mobile')">
-    请输入正确的手机号
+  <div [hidden]="formModel.get('mobile').valid || formModel.get('mobile').pristine">
+    <div [hidden]="!formModel.hasError('mobile','mobile')">
+      请输入正确的手机号
+    </div>
   </div>
+  <div [hidden]="!formModel.get('mobile').pending">
+    正在校验手机号合法性
+  </div>
+
   <div formGroupName="passwordsGroup">
   <div>密码: <input type="password" formControlName="password"></div>
     <div [hidden]="!formModel.hasError('minlength',['passwordsGroup','password'])">
