@@ -57,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/app/shared/product.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -147,8 +147,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="679" />
-    <option name="y" value="57" />
+    <option name="x" value="229" />
+    <option name="y" value="42" />
     <option name="width" value="1440" />
     <option name="height" value="928" />
   </component>
@@ -316,16 +316,15 @@
       <workItem from="1511020448325" duration="2182000" />
       <workItem from="1511279621077" duration="1671000" />
       <workItem from="1511282259252" duration="20000" />
-      <workItem from="1512057226862" duration="331000" />
+      <workItem from="1512057226862" duration="521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29971000" />
+    <option name="totallyTimeSpent" value="30161000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="679" y="57" width="1440" height="928" extended-state="0" />
-    <editor active="true" />
+    <frame x="229" y="42" width="1440" height="928" extended-state="0" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16315049" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -817,7 +816,7 @@
     <entry file="file://$PROJECT_DIR$/app/shared/product.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding />
         </state>
       </provider>
