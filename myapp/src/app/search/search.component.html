@@ -1,15 +1,25 @@
-<form action="" name="searchForm">
-  <div class="form-group">
+<!--<script src="search.component.ts"></script>-->
+<form [formGroup]="formModel" (ngSubmit)="onSearch()" novalidate>
+  <div class="form-group" [class.has-error]="formModel.hasError('minlength','title')">
     <label for="" id="productTitle">商品名称：</label>
-    <input type="text" id="productTitle" placeholder="商品名称" class="form-control">
+    <input formControlName="title" type="text" id="productTitle" placeholder="商品名称" class="form-control">
+    <span class="help-block" [class.hidden]="!formModel.hasError('minlength','title')">
+      请至少输入三个字
+    </span>
   </div>
-  <div class="form-group">
+  <div class="form-group" [class.has-error]="formModel.hasError('positiveNumber','price')">
     <label for="" id="productPrice">商品价格</label>
-    <input type="number" id="productPrice" placeholder="商品价格" class="form-control">
+    <input formControlName="price" type="number" id="productPrice" placeholder="商品价格" class="form-control">
+    <span class="help-block" [class.hidden]="!formModel.hasError('positiveNumber','price')">
+      请至少输入正数
+    </span>
   </div>
   <div class="form-group">
     <label for="" id="productCategory">商品类别</label>
-    <select name="" id="productCategory" class="form-control"></select>
+    <select formControlName="category" name="" id="productCategory" class="form-control">
+      <option value="-1">全部分类</option>
+      <option *ngFor="let category of categories" [value]="category">{{category}}</option>
+    </select>
   </div>
   <div class="form-group">
     <button class="btn btn-primary btn-block" type="submit">搜索</button>
