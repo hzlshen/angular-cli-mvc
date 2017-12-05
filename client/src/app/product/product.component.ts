@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import {Http} from '@angular/http';
 import 'rxjs/Rx';
 @Component({
@@ -13,7 +13,7 @@ export class ProductComponent implements OnInit {
 
   products:Array<any> =[];
 
-  //http发get请求 返回res里的json
+  // http发get请求 返回res里的json
   constructor(private http:Http) {
     this.dataSource = this.http.get('/api/products').map((res)=>res.json());
    }
