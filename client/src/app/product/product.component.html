@@ -1,3 +1,8 @@
-<p>
-  product works!
-</p>
+<div>
+  商品信息
+</div>
+<ul>
+  <li *ngFor="let product of products">
+    {{product.title}}
+  </li>
+</ul>
