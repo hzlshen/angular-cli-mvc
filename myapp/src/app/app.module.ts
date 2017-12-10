@@ -14,6 +14,7 @@ import { Routes,RouterModule } from '@angular/router';
 import {ProductService} from "./shared/product.service";
 import { FilterPipe } from './pipe/filter.pipe';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpModule} from "@angular/http";
 
 
 //路由配置
@@ -41,7 +42,8 @@ const routeConfig:Routes =[
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routeConfig),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
