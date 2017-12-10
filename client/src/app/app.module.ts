@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import {FormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
+import { WebSocketComponent } from './web-socket/web-socket.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent
+    ProductComponent,
+    WebSocketComponent
   ],
   imports: [
     BrowserModule,
