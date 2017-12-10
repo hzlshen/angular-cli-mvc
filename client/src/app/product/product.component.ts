@@ -16,7 +16,7 @@ export class ProductComponent implements OnInit {
 
   // http发get请求 返回res里的json
   constructor(private http:Http) {
-    this.dataSource = this.http.get('http://localhost:8000/api/products')
+    this.dataSource = this.http.get('/api/products')
       .map((res)=>res.json());
   }
 
