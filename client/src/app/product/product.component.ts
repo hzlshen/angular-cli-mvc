@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Http} from "@angular/http";
+import {Http,Headers} from "@angular/http";
 import {Observable} from "rxjs";
 import 'rxjs/Rx';
 
@@ -15,7 +15,11 @@ export class ProductComponent implements OnInit {
 
   // http发get请求 返回res里的json
   constructor(private http:Http) {
-    this.products = this.http.get('/api/products')
+
+    let myHeaders:Headers = new Headers();
+    myHeaders.append("Auction","Basic 123456");
+
+    this.products = this.http.get('/api/products',{headers:myHeaders})
       .map((res)=>res.json());
   }
 
