@@ -10,20 +10,17 @@ import 'rxjs/Rx';
 })
 export class ProductComponent implements OnInit {
 
-  dataSource:Observable<any>;
 
-  products:Array<any> = [];
+  products:Observable<any>;
 
   // http发get请求 返回res里的json
   constructor(private http:Http) {
-    this.dataSource = this.http.get('/api/products')
+    this.products = this.http.get('/api/products')
       .map((res)=>res.json());
   }
 
   ngOnInit() {
-    this.dataSource.subscribe(
-      (data)=>this.products = data
-    )
+    // http请求不是get发出去的 而是subscribe发出去的
   }
 
 }
