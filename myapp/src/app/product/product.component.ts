@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import {ProductService, Product} from "../shared/product.service";
 import {FormControl} from "@angular/forms";
 import "rxjs/Rx";
+import {Observable} from "rxjs";
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -9,19 +10,10 @@ import "rxjs/Rx";
 })
 export class ProductComponent implements OnInit {
 
-  private products:Product[];
-
-  private keyword :string;
-
-  private titleFilter:FormControl = new FormControl();
-
+  private products:Observable<Product[]>;
 
   constructor(private productService:ProductService) {
-    this.titleFilter.valueChanges
-      .debounceTime(500)
-      .subscribe(
-        value=>this.keyword = value
-      )
+
 
 
   }
