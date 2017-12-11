@@ -29,7 +29,7 @@ export class ProductDetailComponent implements OnInit {
       product=>this.product=product
     );
     this.productService.getCommentsForProductId(productId).subscribe(
-      comments=>this.comments =comments;
+      comments=>this.comments =comments
     );
   }
   addComment(){
