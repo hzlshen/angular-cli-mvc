@@ -1,5 +1,7 @@
-angular4开发的项目demo
+angular4开发的项目
 =====================
+
+除了myapp文件夹是综合的应用，其他目录都是angular4的各种demo
 		
 $ git clone https://github.com/hzlshen/angular-cli-mvc.git
 
