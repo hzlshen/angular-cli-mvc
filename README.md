@@ -1,7 +1,7 @@
 angular4开发的项目
 =====================
 
-学习慕课angular4视频，除了myapp文件夹是综合的应用，其他目录都是angular4的各种demo
+学习慕课angular4视频，除了myapp文件夹是综合的web应用，其他目录都是angular4的各种demo
 		
 $ git clone https://github.com/hzlshen/angular-cli-mvc.git
 
