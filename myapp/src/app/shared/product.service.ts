@@ -16,11 +16,11 @@ export class ProductService {
     return this.http.get("/api/products").map(res=>res.json());
   }
 
-  getProduct(id:number):Observable<Product>{
+  getProduct(id:number): Observable<Product> {
     return this.http.get("/api/product/"+id).map(res=>res.json());
   }
 
-  getCommentsForProductId(id:number):Observable<Comment[]>{
+  getCommentsForProductId(id:number) : Observable<Comment[]> {
     return this.http.get("/api/product/"+id+"/comments").map(res=>res.json());
   }
 
@@ -41,6 +41,19 @@ export class Product{
 
   }
 
+}
+
+export class Comment{
+  constructor(
+    public id :number,
+    public productId : number,
+    public timestamp:string,
+    public user: string,
+    public rating:number,
+    public content:string
+  ){
+
+  }
 }
 
 
